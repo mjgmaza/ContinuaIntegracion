@@ -1,6 +1,8 @@
 def dia = new Date()
 
-def date = calendar.getTime()
+def dateFormat = new SimpleDateFormat("HH:mm"); 
+def ahora = dateFormat.format(new Date());
+ 
 def version
 pipeline
 {
@@ -14,7 +16,7 @@ pipeline
                 script
                 {
                     println dia
-                    println date
+                    println ahora
                 }                
             }
         }
