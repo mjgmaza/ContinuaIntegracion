@@ -29,7 +29,7 @@ pipeline {
 }
 def mostrarPoblacionNeta(Integer a)
 {
-    def  poblacion = 100440/2
+    def  poblacion = 100440
+    return poblacion /2
     
-    echo poblacion 
 }
