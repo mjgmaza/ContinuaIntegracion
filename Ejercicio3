@@ -9,8 +9,8 @@ pipeline {
                 println 'Indiana Jones'
                 println 'La guerra de las Galaxias'
                 println 'Regreso al Futuro'
-                println ''
-                println ''
+                println 'Rebeldes'
+                println 'Titanic'
             }
         }
         stage('Comida Favorita') {
