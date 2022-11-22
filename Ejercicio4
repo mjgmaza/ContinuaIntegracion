@@ -18,6 +18,7 @@ pipeline
         }
         stage("motrar en Funcion de la fecha")
         {
+         def version
             steps
             {
                 
