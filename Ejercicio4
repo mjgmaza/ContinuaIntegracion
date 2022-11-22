@@ -12,11 +12,11 @@ pipeline
             {                
                 script
                 {
-                    println dia                                
+                    println ahora                                
                 }                
             }
         }
-        stage("motrar en Funcion de la fecha")
+        stage("motrar en Funcion de la hora")
         {         
             steps
             {                
