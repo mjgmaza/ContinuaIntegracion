@@ -9,8 +9,9 @@ pipeline {
                 println 'Indiana Jones'
                 println 'La guerra de las Galaxias'
                 println 'Regreso al Futuro'
-                println ''
-                println ''
+                 println 'Regreso al Futuro'
+                println 'Rebeldes'
+                println 'Titanic'
             }
         }
         stage('Comida Favorita') {
@@ -52,11 +53,9 @@ pipeline {
 }
 def mostrarSalarioNeto(Integer a)
 {
-     if( salario < 1000)
-     {
-        return salario 
-     }else{
-        salario = salario * 0.8
-        return salario
+     if( salario > 1000)
+     {        
+        salario = salario * 0.8        
      }
+     return salario
 }
