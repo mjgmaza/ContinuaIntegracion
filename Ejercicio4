@@ -28,7 +28,7 @@ pipeline
                 echo 'Id del usuario'
                 println 'mjgmaza'
                 println 'Verión de java en Función'
-                mostrarVersionJava(variable)
+                mostrarVersionJava(version)
                 }
                 
             }
