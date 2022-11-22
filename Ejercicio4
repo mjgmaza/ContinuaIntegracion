@@ -1,0 +1,43 @@
+def dia = new Date()
+pipeline
+{
+    agent any
+    stages
+    {
+        stage("mostrar fecha")
+        {
+            steps
+            {
+                
+                script
+                {
+                    println dia
+                }
+                
+            }
+        }
+        stage("motrar en Funcion de la fecha")
+        {
+            steps
+            {
+                
+                script
+                {
+                echo 'Usuario del proceso'
+                println 'María Jesús'
+                echo 'Id del usuario'
+                println 'mjgmaza'
+                println 'Verión de java en Función'
+                mostrarVersionJava(variable)
+                }
+                
+            }
+        }
+    }
+}
+
+def mostrarVersionJava(String version)
+{
+    bat "java -version"
+    echo a
+}
