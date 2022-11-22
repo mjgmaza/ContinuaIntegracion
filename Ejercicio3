@@ -1,7 +1,8 @@
 pipeline {
     agent any
-    def salario = 1500
+   
     stages {
+         def salario = 1500
         stage('Top 5 peliculas') {
             steps {
                 echo 'To 5 peliculas'
