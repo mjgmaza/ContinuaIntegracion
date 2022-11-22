@@ -41,7 +41,7 @@ pipeline {
             steps {
                 echo 'Salario Neto'
                 script{
-                     mostrarSalarioNeto(a)
+                     mostrarSalarioNeto(1)
                 }
                
             }
