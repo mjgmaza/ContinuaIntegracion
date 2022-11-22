@@ -1,4 +1,5 @@
 def salario = 1500
+def otuput
 pipeline {
     agent any   
     stages {
@@ -42,7 +43,8 @@ pipeline {
             steps {
                 echo 'Salario Neto'
                 script{
-                     mostrarSalarioNeto(1)
+                    otuput =  mostrarSalarioNeto(salario)
+                    echo output 
                 }
                
             }
@@ -51,7 +53,7 @@ pipeline {
         
     }
 }
-def mostrarSalarioNeto(Integer a)
+def mostrarSalarioNeto(Integer salario)
 {
      if( salario > 1000)
      {        
