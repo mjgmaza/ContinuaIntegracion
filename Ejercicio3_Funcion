@@ -1,0 +1,62 @@
+def salario = 1500
+pipeline {
+    agent any   
+    stages {
+         
+        stage('Top 5 peliculas') {
+            steps {
+                echo 'To 5 peliculas'
+                println 'Indiana Jones'
+                println 'La guerra de las Galaxias'
+                println 'Regreso al Futuro'
+                println ''
+                println ''
+            }
+        }
+        stage('Comida Favorita') {
+            steps {
+                echo 'Comida favorita'
+                println 'Cocido Montañes'
+            }
+        }
+        stage('Signo Zodiaco') {
+            steps {
+                echo 'Signo Zodiaco'
+                println 'Libra'
+            }
+        }
+        stage('Puesto Actual') {
+            steps {
+                echo 'Puesto Actual'
+                println 'Analista Programador'
+            }
+        }
+        stage('Salario Bruto') {
+            steps {
+                echo 'Salario Bruto'
+                println salario
+            }
+        }
+        stage('Salario Neto') {
+            steps {
+                echo 'Salario Neto'
+                script{
+                     mostrarSalarioNeto
+                }
+               
+            }
+        }
+        
+        
+    }
+}
+def mostrarSalarioNeto(Integer a)
+{
+     if( salario > 1000)
+     {
+        return salario 
+     }else{
+        salario = salario * 0.8
+        return salario
+     }
+    
