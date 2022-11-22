@@ -1,7 +1,6 @@
 def dia = new Date()
-
-def df = "dd.MM.yyyy HH:mm:ss,S"
-def ahora = new Date().parse(df) 
+def calendario = new GregorianCalendar();
+def hora
 def version
 pipeline
 {
@@ -15,7 +14,8 @@ pipeline
                 script
                 {
                     println dia
-                    println ahora
+                    println calendario
+                    println calendario.get(Calendar.HOUR_OF_DAY);
                 }                
             }
         }
