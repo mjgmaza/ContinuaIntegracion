@@ -1,6 +1,6 @@
 def ahora = new Date()
 def formato = new SimpleDateFormat("dd/MM/yyyy HH:MI:ss");
-def mediodia = new Date().format("dd/MM/yyyy HH:MI:ss", "22/11/2022 12:00:00)
+def mediodia = new Date().format("dd/MM/yyyy HH:mm:ss", "22/11/2022 12:00:00")
 def version
 pipeline
 {
