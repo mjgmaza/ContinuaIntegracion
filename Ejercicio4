@@ -26,7 +26,7 @@ pipeline
             {                
                 script
                 {
-                if (valido){
+                if (valida){
                     echo 'Usuario del proceso'
                     println 'María Jesús'
                     echo 'Id del usuario'
