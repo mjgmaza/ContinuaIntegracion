@@ -1,8 +1,5 @@
 def ahora = new Date()
 
-def df = "dd.MM.yyyy HH:mm:ss"
-def mediodia = Date.parse("dd-MM-yyyy hh:mm:ss", "22-11-2022 12:00:00")
-def hora
 def version
 pipeline
 {
@@ -15,8 +12,7 @@ pipeline
             {                
                 script
                 {
-                    println dia
-                    println mediodia                    
+                    println dia                                
                 }                
             }
         }
