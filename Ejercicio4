@@ -8,21 +8,17 @@ pipeline
         stage("mostrar fecha")
         {
             steps
-            {
-                
+            {                
                 script
                 {
                     println dia
-                }
-                
+                }                
             }
         }
         stage("motrar en Funcion de la fecha")
-        {
-         
+        {         
             steps
-            {
-                
+            {                
                 script
                 {
                 echo 'Usuario del proceso'
@@ -31,8 +27,7 @@ pipeline
                 println 'mjgmaza'
                 println 'Verión de java en Función'
                 mostrarVersionJava(version)
-                }
-                
+                }                
             }
         }
     }
@@ -41,5 +36,5 @@ pipeline
 def mostrarVersionJava(String version)
 {
     bat "java -version"
-    echo a
+    echo version
 }
