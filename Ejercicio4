@@ -1,5 +1,6 @@
 def dia = new Date()
-def fechaMediodia = new Date(12:00:00)
+
+def date = calendar.getTime()
 def version
 pipeline
 {
@@ -13,7 +14,7 @@ pipeline
                 script
                 {
                     println dia
-                    println fechaMediodia
+                    println date
                 }                
             }
         }
