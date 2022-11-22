@@ -1,5 +1,5 @@
 def salario = 1500
-def otuput
+def output
 pipeline {
     agent any   
     stages {
