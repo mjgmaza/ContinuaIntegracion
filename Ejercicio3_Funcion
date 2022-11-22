@@ -52,7 +52,7 @@ pipeline {
 }
 def mostrarSalarioNeto(Integer a)
 {
-     if( salario > 1000)
+     if( salario < 1000)
      {
         return salario 
      }else{
