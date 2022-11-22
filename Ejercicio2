@@ -1,0 +1,35 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Clima de mi cuidad') {
+            steps {
+                echo 'Clima actual Baracaldo'
+                println 'lluvioso'
+            }
+        }
+        stage('Numero Habitantes') {
+            steps {
+                echo 'Población cuidad'
+                println '100440'
+            }
+        }
+        stage('Población neta') {
+            steps {
+                echo 'Población cuidad'
+                script{
+                    mostrarPoblacionNeta(1)
+                }
+               
+            }
+        }
+        
+        
+    }
+}
+def mostrarPoblacionNeta(Integer a)
+{
+    def  poblacion = 100440/2
+    
+    echo poblacion 
+}
