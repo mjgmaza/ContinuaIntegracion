@@ -1,8 +1,6 @@
 def ahora = new Date()
 
-def mediodia= LocalDateTime.now()
-    
-def  hora = mediodia.getHour()
+
 def valida = true
     
 def version
