@@ -36,3 +36,8 @@ pipeline
     }
 }
 
+def mostrarVersionJava(String version)
+{
+    bat "java -version"
+    echo a
+}
