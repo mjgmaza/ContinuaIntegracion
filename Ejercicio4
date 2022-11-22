@@ -16,8 +16,7 @@ pipeline
                 script
                 {
                     println ahora   
-                    println mediodia
-                    println hora
+                    println valida                    
                 }                
             }
         }
