@@ -55,7 +55,7 @@ def mostrarSalarioNeto(Integer a)
      {
         return salario 
      }else{
-        salario = salario *0,80
+        salario = salario * 0.8
         return salario
      }
     
