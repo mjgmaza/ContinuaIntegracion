@@ -1,8 +1,7 @@
 def dia = new Date()
 
-def dateFormat = new SimpleDateFormat("HH:mm"); 
-def ahora = dateFormat.format(new Date());
- 
+def df = "dd.MM.yyyy HH:mm:ss,S"
+def ahora = new Date().parse(df, "13.07.2017 14:03:51,469000000") 
 def version
 pipeline
 {
