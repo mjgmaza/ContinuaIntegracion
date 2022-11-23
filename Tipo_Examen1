@@ -20,6 +20,19 @@ pipeline {
                     if ( map[dia] == "Lunes"){
                         println "Es lunes"
                     }
+                    if ( map[dia] == "Martes"){
+                        println "Es Martes"
+                    }
+                    if ( map[dia] == "Miercoles"){
+                        println "Es Miercole"
+                    }
+                    if ( map[dia] == "Jueves"){
+                        println "Es Jueves"
+                    }
+                    if ( map[dia] == "Viernes"){
+                        println "Es Viernes"
+                    }
+                    
                     
                 }
             }
