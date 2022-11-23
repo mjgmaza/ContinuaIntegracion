@@ -57,6 +57,7 @@ pipeline {
                         def pi = Math.PI
                         println pi
                         echo pi as String
+                        mostrarVersionJava(variable)
                         break; 
                      case 4: 
                         println("Jueves"); 
@@ -71,4 +72,9 @@ pipeline {
             }
         }
     }
+}
+def mostrarVersionJava(String version)
+{
+    bat "java -version"
+    echo a
 }
