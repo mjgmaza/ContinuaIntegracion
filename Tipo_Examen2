@@ -28,14 +28,17 @@ pipeline
                     if (horaActual >= 0 &&  horaActual <10){
                         println  'if por entre 0 y 13'
                         println  'La hora actual es:'  + horaActual
+                        ejecutarComando1()
                     }else{
                         if (horaActual >= 11 &&  horaActual <15){
                             println  'entre 11 y 15'
                             println  'La hora actual es:'  + horaActual
+                            ejecutarComando2()
                          }else{
                             if (horaActual >= 16 &&  horaActual <22){
                                 println  'entre 11 y 15'
                                 println  'La hora actual es:'  + horaActual
+                                ejecutarComando3()
                             }
                          }
                     }
@@ -43,4 +46,23 @@ pipeline
              }
           }                    
     }
+}
+
+def ejecutarComando1 () {
+    
+        echo "Comando1"
+        echo "Version Java:" 
+        bat "git --version"
+}
+def ejecutarComando2 () {
+    
+        echo "Comando2"
+        echo "Version Java:" 
+        bat "git --version"
+}
+def ejecutarComando3 () {
+    
+        echo "Comando3"
+        echo "Version Java:" 
+        bat "git --version"
 }
