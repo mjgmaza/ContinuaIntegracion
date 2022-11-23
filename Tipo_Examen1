@@ -35,6 +35,7 @@ pipeline {
                             echo "Usuario: $BUILD_USER"
                             echo "Id Usuario: $BUILD_USER_ID"
                         }
+                    }
                     if ( map[dia] == "Jueves"){
                         println "Es Jueves"
                     }
