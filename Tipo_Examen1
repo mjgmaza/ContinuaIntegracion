@@ -30,7 +30,7 @@ pipeline {
                         println "Es Miercole"
                         def pi = Math.PI
                         println pi
-                        echo pi
+                        echo pi as String
                     }
                     if ( map[dia] == "Jueves"){
                         println "Es Jueves"
