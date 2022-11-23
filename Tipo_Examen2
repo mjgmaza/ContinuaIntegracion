@@ -40,6 +40,7 @@ pipeline
                                 println  'entre 11 y 15'
                                 println  'La hora actual es:'  + horaActual
                                 println dia
+                                bat "TIME /t"
                             }
                          }
                     }
