@@ -17,6 +17,10 @@ pipeline {
                     ]
                     
                     println map[dia]
+                    if (dia=1){
+                        println "Es lunes"
+                    }
+                    
                 }
             }
         }
