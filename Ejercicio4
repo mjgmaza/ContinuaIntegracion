@@ -1,5 +1,5 @@
 def dia = new Date()
-
+import java.util.Calendar
     
 pipeline
 {
@@ -13,6 +13,8 @@ pipeline
                 
                 script
                 {
+                    Calendar cal=Calendar.getInstance();//it return same time as new Date()
+                    def hour = cal.get(Calendar.HOUR_OF_DAY)
                     int horaActual = new Date().getHours()
                     println dia
                     println  'La hora actual es:'  + horaActual
