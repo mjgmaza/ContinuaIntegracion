@@ -14,7 +14,7 @@ pipeline
                 script
                 {
                     println dia
-                    echo "La hora actual es: " + horaActual
+                    echo 'La hora actual es:'  + horaActual
                 }
                 
             }
