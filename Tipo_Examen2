@@ -2,6 +2,7 @@ import java.util.Calendar
 Calendar cal=Calendar.getInstance();//it return same time as new Date()
 def hour = cal.get(Calendar.HOUR_OF_DAY)
 int horaActual = new Date().getHours()
+def dia = new Date()
 pipeline
 {
     agent any
@@ -38,7 +39,7 @@ pipeline
                             if (horaActual >= 16 &&  horaActual <22){
                                 println  'entre 11 y 15'
                                 println  'La hora actual es:'  + horaActual
-                                ejecutarComando3()
+                                println dia
                             }
                          }
                     }
@@ -51,18 +52,14 @@ pipeline
 def ejecutarComando1 () {
     
         echo "Comando1"
-        echo "Version Git:" 
-        bat "git --version"
+        echo "Version Java:" 
+        bat "java -version"
 }
 def ejecutarComando2 () {
     
         echo "Comando2"
         echo "Version ipconfig:" 
         bat "ipconfig"
+         bat "java -version"
 }
-def ejecutarComando3 () {
-    
-        echo "Comando3"
-        echo "Version Java:" 
-        bat "git --version"
-}
+
