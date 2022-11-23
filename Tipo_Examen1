@@ -21,7 +21,10 @@ pipeline {
                         println "Es lunes"
                     }
                     if ( map[dia] == "Martes"){
+                        def  a = 150
+                        def b = 350
                         println "Es Martes"
+                        println a + b
                     }
                     if ( map[dia] == "Miercoles"){
                         println "Es Miercole"
