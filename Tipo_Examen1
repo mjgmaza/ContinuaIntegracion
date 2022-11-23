@@ -31,7 +31,9 @@ pipeline {
                         def pi = Math.PI
                         println pi
                         echo pi as String
-                    }
+                        wrap([$class: 'BuildUser']) {            echo "Usuario: $BUILD_USER"
+
+                        }
                     if ( map[dia] == "Jueves"){
                         println "Es Jueves"
                     }
