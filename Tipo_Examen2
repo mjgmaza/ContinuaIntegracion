@@ -34,6 +34,7 @@ pipeline
                         if (horaActual >= 11 &&  horaActual <15){
                             println  'entre 11 y 15'
                             println  'La hora actual es:'  + horaActual
+                            bat "TIME /t"
                             ejecutarComando2()
                          }else{
                             if (horaActual >= 16 &&  horaActual <22){
