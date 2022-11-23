@@ -1,3 +1,4 @@
+def version
 pipeline {
     agent any 
     
@@ -57,7 +58,7 @@ pipeline {
                         def pi = Math.PI
                         println pi
                         echo pi as String
-                        mostrarVersionJava(variable)
+                        mostrarVersionJava(version)
                         break; 
                      case 4: 
                         println("Jueves"); 
