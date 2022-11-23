@@ -51,14 +51,14 @@ pipeline
 def ejecutarComando1 () {
     
         echo "Comando1"
-        echo "Version Java:" 
+        echo "Version Git:" 
         bat "git --version"
 }
 def ejecutarComando2 () {
     
         echo "Comando2"
-        echo "Version Java:" 
-        bat "git --version"
+        echo "Version ipconfig:" 
+        bat "ipconfig"
 }
 def ejecutarComando3 () {
     
