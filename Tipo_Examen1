@@ -36,11 +36,13 @@ pipeline {
                         
                     }
                     if ( map[dia] == "Jueves"){
+                        println "Usuario mjgmaza"
                         println "Es Jueves"
                         
                     }
                     if ( map[dia] == "Viernes"){
                         println "Es Viernes"
+                        mostrarVersionJava(version)
                     }
                     switch(dia) {            
                      case 1: 
@@ -58,13 +60,15 @@ pipeline {
                         def pi = Math.PI
                         println pi
                         echo pi as String
-                        mostrarVersionJava(version)
                         break; 
                      case 4: 
                         println("Jueves"); 
+                        println "Usuario mjgmaza"
                         break; 
-                     default: 
+                      case 5: 
                         println("Viernes"); 
+                        mostrarVersionJava(version)                        
+                     default: 
                         break; 
                   }
 
