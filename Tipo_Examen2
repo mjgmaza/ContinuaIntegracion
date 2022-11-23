@@ -31,12 +31,12 @@ pipeline
                         println  'La hora actual es:'  + horaActual
                         ejecutarComando1()
                     }else{
-                        if (horaActual >= 11 &&  horaActual <15){
+                        if (horaActual >= 11 &&  horaActual <12){
                             println  'entre 11 y 15'
                             println  'La hora actual es:'  + horaActual
                             ejecutarComando2()
                          }else{
-                            if (horaActual >= 16 &&  horaActual <22){
+                            if (horaActual >= 13 &&  horaActual <22){
                                 println  'entre 11 y 15'
                                 println  'La hora actual es:'  + horaActual
                                 println dia
@@ -59,7 +59,6 @@ def ejecutarComando2 () {
     
         echo "Comando2"
         echo "Version ipconfig:" 
-        bat "ipconfig"
-         bat "java -version"
+        bat "ipconfig"         
 }
 
