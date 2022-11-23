@@ -28,9 +28,8 @@ pipeline {
                     }
                     if ( map[dia] == "Miercoles"){
                         println "Es Miercole"
-                         def  a = 150
-                        def b = 350
-                        println a + b
+                        def pi = Math.PI
+                        println pi
                     }
                     if ( map[dia] == "Jueves"){
                         println "Es Jueves"
