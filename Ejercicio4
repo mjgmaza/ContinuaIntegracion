@@ -1,5 +1,5 @@
 def dia = new Date()
-int horaActual = new Date().getHours()
+def horaActual = new Date().getHours()
     
 pipeline
 {
@@ -14,7 +14,7 @@ pipeline
                 script
                 {
                     println dia
-                    echo 'La hora actual es:'  + horaActual
+                    println  'La hora actual es:'  + horaActual
                 }
                 
             }
