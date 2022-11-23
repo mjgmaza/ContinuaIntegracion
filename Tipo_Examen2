@@ -1,5 +1,7 @@
-def dia = new Date()
 import java.util.Calendar
+Calendar cal=Calendar.getInstance();//it return same time as new Date()
+def hour = cal.get(Calendar.HOUR_OF_DAY)
+int horaActual = new Date().getHours()
 pipeline
 {
     agent any
@@ -11,9 +13,6 @@ pipeline
             {                
                 script
                 {
-                    Calendar cal=Calendar.getInstance();//it return same time as new Date()
-                    def hour = cal.get(Calendar.HOUR_OF_DAY)
-                    int horaActual = new Date().getHours()
                     println  'La hora actual es:'  + horaActual
                     println  'La hora actual Calendar es:'  + horaActual                    
                     if (horaActual >12){
@@ -33,10 +32,6 @@ pipeline
             {                
                 script
                 {
-                    Calendar cal=Calendar.getInstance();//it return same time as new Date()
-                    def hour = cal.get(Calendar.HOUR_OF_DAY)
-                    int horaActual = new Date().getHours()
-                    println dia
                     println  'La hora actual es:'  + horaActual
                     println  'La hora actual Calendar es:'  + horaActual                    
                     if (horaActual >12){
