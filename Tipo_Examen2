@@ -25,12 +25,19 @@ pipeline
             {                
                 script
                 {
-                    if (horaActual >= 0 &&  horaActual <13){
+                    if (horaActual >= 0 &&  horaActual <10){
                         println  'if por entre 0 y 13'
                         println  'La hora actual es:'  + horaActual
                     }else{
-                        println  'if por else'
-                        println  'La hora actual es:'  + horaActual
+                        if (horaActual >= 11 &&  horaActual <15){
+                            println  'entre 11 y 15'
+                            println  'La hora actual es:'  + horaActual
+                         }else{
+                            if (horaActual >= 16 &&  horaActual <22){
+                                println  'entre 11 y 15'
+                                println  'La hora actual es:'  + horaActual
+                            }
+                         }
                     }
                  }
              }
