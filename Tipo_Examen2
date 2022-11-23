@@ -14,14 +14,7 @@ pipeline
                 script
                 {
                     println  'La hora actual es:'  + horaActual
-                    println  'La hora actual Calendar es:'  + horaActual                    
-                    if (horaActual >12){
-                        println  'if por mayor'
-                        println  'La hora actual es:'  + horaActual
-                    }else{
-                        println  'if por else'
-                        println  'La hora actual es:'  + horaActual
-                    }
+                    println  'La hora actual Calendar es:'  + horaActual                                        
                 }
                 
             }
@@ -32,10 +25,8 @@ pipeline
             {                
                 script
                 {
-                    println  'La hora actual es:'  + horaActual
-                    println  'La hora actual Calendar es:'  + horaActual                    
-                    if (horaActual >12){
-                        println  'if por mayor'
+                    if (horaActual >= 0 &&  horaActual <13){
+                        println  'if por entre 0 y 13'
                         println  'La hora actual es:'  + horaActual
                     }else{
                         println  'if por else'
